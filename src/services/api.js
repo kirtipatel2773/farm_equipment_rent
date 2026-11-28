@@ -1,4 +1,5 @@
-const API_BASE = 'http://localhost:5001/api';
+// const API_BASE = 'http://localhost:5001/api';
+const API_BASE = `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001'}/api`;
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem('agrirent_token');
